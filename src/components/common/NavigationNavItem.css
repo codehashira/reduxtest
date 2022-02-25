@@ -1,0 +1,21 @@
+.navigationNavItem_container {
+  /* background-color: #f5f6fa; */
+  color: #f5f6fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  margin: 10px 0px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 13rem;
+}
+
+.navigationNavItem_container:hover {
+  color: #dcdde1;
+  background-color: #192a56;
+}
+
+.navigationNavItem_container p {
+  transition: all 0.1s ease-out;
+}

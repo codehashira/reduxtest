@@ -1,0 +1,7 @@
+.card_container {
+  border: 1px solid #dcdde1;
+  background-color: white;
+  color: #2f3640;
+  display: flex;
+  padding: 0px 10px;
+}

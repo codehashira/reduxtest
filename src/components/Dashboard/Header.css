@@ -1,0 +1,18 @@
+.header_container {
+  flex: 1;
+}
+
+.modal_container {
+  background-color: #2f364037;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+}
+
+.add_task_modal {
+  background-color: white;
+  padding: 20px 10px;
+}

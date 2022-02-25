@@ -1,0 +1,8 @@
+.navigation_container {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #273c75;
+  color: #f5f6fa;
+}

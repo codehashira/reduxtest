@@ -1,0 +1,19 @@
+.board_container {
+  flex: 12;
+  padding: 0 1rem;
+}
+
+.board_title_bar {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.board_title_bar div {
+  width: 100%;
+}
+
+.board_title_bar div p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #999ba0;
+}
