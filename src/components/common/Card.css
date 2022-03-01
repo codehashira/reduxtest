@@ -4,9 +4,22 @@
   color: #2f3640;
   display: flex;
   align-items: flex-start;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
-  padding: 0px 10px;
+  align-items: center;
+  padding: 10px 10px;
+  margin: 8px 0px;
+  width: 15rem;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+}
+
+.card_container:hover {
+  background-color: #dcdde1;
 }
 
 .card_container p {

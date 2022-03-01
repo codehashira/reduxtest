@@ -1,14 +1,19 @@
 import "./App.css";
 import { Dashboard } from "./components/Dashboard/Dashboard";
 import { Navigation } from "./components/Navigation";
+import { Provider } from 'react-redux'
+import store from '../src/app/store'
+
 
 function App() {
   return (
     <div className="App">
-      {/* Navigation */}
-      <Navigation />
-      {/* Main -> Header | Board */}
-      <Dashboard />
+      <Provider store={store}>
+        {/* Navigation */}
+        <Navigation />
+        {/* Main -> Header | Board */}
+        <Dashboard />
+      </Provider>
     </div>
   );
 }
