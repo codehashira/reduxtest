@@ -1,0 +1,27 @@
+.checkbox_container {
+  width: 20px;
+  height: 20px;
+  background-color: #dcdde1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+}
+
+.checkbox_container:hover {
+  background-color: #9fa0a4;
+}
+.checkbox_container:active > .mark_indicator {
+  background-color: #718093;
+}
+
+.mark_indicator {
+  width: 15px;
+  height: 15px;
+}

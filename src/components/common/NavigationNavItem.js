@@ -7,6 +7,9 @@ const NavigationNavItem = (props) => {
     <div
       className="navigationNavItem_container"
       onClick={() => props.handleClick(props.index)}
+      style={
+        props.activeIndex === props.index ? { backgroundColor: " #192a56" } : {}
+      }
     >
       <p
         style={

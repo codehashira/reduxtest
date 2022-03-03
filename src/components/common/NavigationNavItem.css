@@ -4,8 +4,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 10px;
-  margin: 10px 0px;
+  padding: 15px 10px;
+
   cursor: pointer;
   transition: all 150ms ease-in-out;
   width: 13rem;
@@ -13,9 +13,10 @@
 
 .navigationNavItem_container:hover {
   color: #dcdde1;
-  background-color: #192a56;
+  background-color: #16223d;
 }
 
 .navigationNavItem_container p {
   transition: all 0.1s ease-out;
 }
+

@@ -5,22 +5,19 @@
   display: flex;
   align-items: flex-start;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 1rem;
   align-items: center;
   padding: 10px 10px;
   margin: 8px 0px;
   width: 15rem;
   cursor: pointer;
-  transition: all 250ms ease-in-out;
-  -webkit-transition: all 250ms ease-in-out;
-  -moz-transition: all 250ms ease-in-out;
-  -ms-transition: all 250ms ease-in-out;
-  -o-transition: all 250ms ease-in-out;
+  position: relative;
 }
 
-.card_container:hover {
-  background-color: #dcdde1;
-}
+/* .card_container:hover {
+  background-color: #eaeaee;
+} */
 
 .card_container p {
   margin: 2px 0px;
@@ -28,4 +25,64 @@
 
 .card_container p:last-child {
   font-size: 12px;
+}
+
+.mark_checkbox {
+  background-color: red;
+}
+
+/* .option_modal_container {
+  display: block;
+  position: absolute;
+  background-color: rgb(216, 216, 216);
+  bottom: -55%;
+  left: 0;
+  right: 0;
+  transform: translateY(-40px);
+  box-shadow: 4px 10px 22px -11px rgba(0, 0, 0, 0.34);
+  -webkit-box-shadow: 4px 10px 22px -11px rgba(0, 0, 0, 0.34);
+  -moz-box-shadow: 4px 10px 22px -11px rgba(0, 0, 0, 0.34);
+} */
+
+.card_options {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #273c75;
+  background-color: white;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 250ms ease-in-out;
+}
+
+.card_options span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: 1.5rem;
+  transition: all 250ms ease-in-out;
+}
+
+.card_options span:nth-child(1):hover {
+  background-color: #44bd32;
+  color: #f5f6fa;
+}
+
+.card_options span:nth-child(2):hover {
+  background-color: #487eb0;
+  color: #f5f6fa;
+}
+
+.card_options span:nth-child(3):hover {
+  background-color: #c23616;
+  color: #f5f6fa;
+}
+
+.card_container:hover > .card_options {
+  display: flex;
 }

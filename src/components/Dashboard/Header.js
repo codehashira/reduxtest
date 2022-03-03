@@ -4,8 +4,7 @@ import "./Header.css";
 
 import Button from "../common/Button";
 
-const Header = () => {
-  const [modalVisible, setModalVisible] = useState(false);
+const Header = (props) => {
   return (
     <div
       className="header_container"
@@ -20,26 +19,9 @@ const Header = () => {
       <Button
         title="ADD +"
         onClick={() => {
-          setModalVisible(!modalVisible);
+          props.setModalVisible(!props.modalVisible);
         }}
       />
-      <div
-        className="modal_container"
-        style={
-          modalVisible
-            ? {
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }
-            : { display: "none" }
-        }
-        onClick={() => setModalVisible(!modalVisible)}
-      >
-        <div className="add_task_modal">
-          <p>Modal</p>
-        </div>
-      </div>
     </div>
   );
 };
