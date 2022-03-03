@@ -74,7 +74,10 @@ const Modal = (props) => {
                 }
               }}
             />
-            <Button title="CANCEL" />
+            <Button
+              title="CANCEL"
+              onClick={() => props.setModalVisible(!props.modalVisible)}
+            />
           </div>
         </div>
       </div>
